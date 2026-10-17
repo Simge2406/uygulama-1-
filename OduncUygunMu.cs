@@ -1,7 +1,7 @@
 ﻿using System;
 class Program
 {
-    static bool OduncUygunMU(bool OduncAlindi, int gun)
+    static bool OduncUygunMu(bool OduncAlindi, int gun)
     {
         return !OduncAlindi && gun >= 1 && gun <= 7;
     }
@@ -15,7 +15,7 @@ class Program
             Console.WriteLine(" 1-7 arası  bir sayı giriniz.");
             return;
         }
-        bool oduncAlindi = false;
+        bool oduncAlindi = true;
         if (OduncUygunMu(oduncAlindi, gun))
         {
             Console.WriteLine($"Süre : {gun} gün ");
@@ -31,5 +31,4 @@ class Program
 // 1 girilirse kabul edilir.
 // 7 girilirse kabul edilir.
 // 8 girilirse reddedilir çünkü gün sayısı 7'den büyüktür.
-
 
